@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 
-echo 'Hello World!'
+export msg="Hello World!"
+
+if [ -n "${name}" ]; then
+  msg="Hello ${name}!"
+fi
+
+echo ${msg}
 
